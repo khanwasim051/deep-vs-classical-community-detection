@@ -1,0 +1,150 @@
+all: could not load (ValueError: unknown dataset all; choose from ['email-eu-core', 'football', 'dolphins', 'ukfaculty', 'kki', 'amazon-computers', 'amazon-photo', 'citeseer', 'cora',)
+{'dataset': 'lfr6', 'nodes': 5000, 'edges': 68922, 'K': 129, 'attr_dim': 0, 'homophily': 0.176, 'realized_mixing': 0.824, 'components': 1}
+{'dataset': 'lfr7', 'nodes': 5000, 'edges': 68950, 'K': 129, 'attr_dim': 0, 'homophily': 0.097, 'realized_mixing': 0.903, 'components': 1}
+{'dataset': 'wiki', 'nodes': 2405, 'edges': 11596, 'K': 17, 'attr_dim': 4973, 'homophily': 0.61, 'realized_mixing': 0.39, 'components': 45}
+{'dataset': 'blogcatalog', 'nodes': 5196, 'edges': 171743, 'K': 6, 'attr_dim': 8189, 'homophily': 0.401, 'realized_mixing': 0.599, 'components': 1}
+{'dataset': 'chameleon', 'nodes': 2277, 'edges': 31371, 'K': 5, 'attr_dim': 2325, 'homophily': 0.23, 'realized_mixing': 0.77, 'components': 1}
+{'dataset': 'squirrel', 'nodes': 5201, 'edges': 198353, 'K': 5, 'attr_dim': 2089, 'homophily': 0.222, 'realized_mixing': 0.778, 'components': 1}
+{'dataset': 'actor', 'nodes': 7600, 'edges': 26659, 'K': 5, 'attr_dim': 932, 'homophily': 0.217, 'realized_mixing': 0.783, 'components': 1}
+{'dataset': 'coauthor-cs', 'nodes': 18333, 'edges': 81894, 'K': 15, 'attr_dim': 6805, 'homophily': 0.808, 'realized_mixing': 0.192, 'components': 1}
+{'dataset': 'het_t2_c1.1_g1', 'nodes': 5000, 'edges': 67822, 'K': 69, 'attr_dim': 0, 'homophily': 0.457, 'realized_mixing': 0.543, 'components': 1}
+{'dataset': 'het_t2_c1.1_g2', 'nodes': 5000, 'edges': 66948, 'K': 65, 'attr_dim': 0, 'homophily': 0.455, 'realized_mixing': 0.545, 'components': 1}
+{'dataset': 'het_t2_c1.1_g3', 'nodes': 5000, 'edges': 68428, 'K': 62, 'attr_dim': 0, 'homophily': 0.458, 'realized_mixing': 0.542, 'components': 1}
+{'dataset': 'het_t2_c2_g1', 'nodes': 5000, 'edges': 67889, 'K': 99, 'attr_dim': 0, 'homophily': 0.451, 'realized_mixing': 0.549, 'components': 1}
+{'dataset': 'het_t2_c2_g2', 'nodes': 5000, 'edges': 69132, 'K': 99, 'attr_dim': 0, 'homophily': 0.455, 'realized_mixing': 0.545, 'components': 1}
+{'dataset': 'het_t2_c2_g3', 'nodes': 5000, 'edges': 67862, 'K': 104, 'attr_dim': 0, 'homophily': 0.453, 'realized_mixing': 0.547, 'components': 1}
+{'dataset': 'het_t2.5_c1.1_g1', 'nodes': 5000, 'edges': 65243, 'K': 65, 'attr_dim': 0, 'homophily': 0.437, 'realized_mixing': 0.563, 'components': 1}
+{'dataset': 'het_t2.5_c1.1_g2', 'nodes': 5000, 'edges': 66434, 'K': 62, 'attr_dim': 0, 'homophily': 0.437, 'realized_mixing': 0.563, 'components': 1}
+{'dataset': 'het_t2.5_c1.1_g3', 'nodes': 5000, 'edges': 67194, 'K': 66, 'attr_dim': 0, 'homophily': 0.441, 'realized_mixing': 0.559, 'components': 1}
+{'dataset': 'het_t2.5_c2_g1', 'nodes': 5000, 'edges': 65227, 'K': 95, 'attr_dim': 0, 'homophily': 0.436, 'realized_mixing': 0.564, 'components': 1}
+{'dataset': 'het_t2.5_c2_g2', 'nodes': 5000, 'edges': 65406, 'K': 103, 'attr_dim': 0, 'homophily': 0.436, 'realized_mixing': 0.564, 'components': 1}
+{'dataset': 'het_t2.5_c2_g3', 'nodes': 5000, 'edges': 65902, 'K': 91, 'attr_dim': 0, 'homophily': 0.436, 'realized_mixing': 0.564, 'components': 1}
+{'dataset': 'het_t3_c1.1_g1', 'nodes': 5000, 'edges': 61380, 'K': 72, 'attr_dim': 0, 'homophily': 0.426, 'realized_mixing': 0.574, 'components': 1}
+{'dataset': 'het_t3_c1.1_g2', 'nodes': 5000, 'edges': 60698, 'K': 67, 'attr_dim': 0, 'homophily': 0.425, 'realized_mixing': 0.575, 'components': 1}
+{'dataset': 'het_t3_c1.1_g3', 'nodes': 5000, 'edges': 61614, 'K': 59, 'attr_dim': 0, 'homophily': 0.428, 'realized_mixing': 0.572, 'components': 1}
+{'dataset': 'het_t3_c2_g1', 'nodes': 5000, 'edges': 61447, 'K': 98, 'attr_dim': 0, 'homophily': 0.425, 'realized_mixing': 0.575, 'components': 1}
+{'dataset': 'het_t3_c2_g2', 'nodes': 5000, 'edges': 62227, 'K': 119, 'attr_dim': 0, 'homophily': 0.425, 'realized_mixing': 0.575, 'components': 1}
+{'dataset': 'het_t3_c2_g3', 'nodes': 5000, 'edges': 61129, 'K': 101, 'attr_dim': 0, 'homophily': 0.424, 'realized_mixing': 0.576, 'components': 1}
+{'dataset': 'mu0.1g1', 'nodes': 5000, 'edges': 62858, 'K': 132, 'attr_dim': 0, 'homophily': 0.84, 'realized_mixing': 0.16, 'components': 1}
+{'dataset': 'mu0.1g2', 'nodes': 5000, 'edges': 62419, 'K': 135, 'attr_dim': 0, 'homophily': 0.839, 'realized_mixing': 0.161, 'components': 1}
+{'dataset': 'mu0.1g3', 'nodes': 5000, 'edges': 63214, 'K': 136, 'attr_dim': 0, 'homophily': 0.84, 'realized_mixing': 0.16, 'components': 1}
+{'dataset': 'mu0.2g1', 'nodes': 5000, 'edges': 64379, 'K': 136, 'attr_dim': 0, 'homophily': 0.682, 'realized_mixing': 0.318, 'components': 1}
+{'dataset': 'mu0.2g2', 'nodes': 5000, 'edges': 64856, 'K': 135, 'attr_dim': 0, 'homophily': 0.683, 'realized_mixing': 0.317, 'components': 1}
+{'dataset': 'mu0.2g3', 'nodes': 5000, 'edges': 65192, 'K': 135, 'attr_dim': 0, 'homophily': 0.682, 'realized_mixing': 0.318, 'components': 1}
+{'dataset': 'mu0.3g1', 'nodes': 5000, 'edges': 66419, 'K': 131, 'attr_dim': 0, 'homophily': 0.534, 'realized_mixing': 0.466, 'components': 1}
+{'dataset': 'mu0.3g2', 'nodes': 5000, 'edges': 66818, 'K': 136, 'attr_dim': 0, 'homophily': 0.535, 'realized_mixing': 0.465, 'components': 1}
+{'dataset': 'mu0.3g3', 'nodes': 5000, 'edges': 66770, 'K': 138, 'attr_dim': 0, 'homophily': 0.534, 'realized_mixing': 0.466, 'components': 1}
+{'dataset': 'mu0.4g1', 'nodes': 5000, 'edges': 67632, 'K': 133, 'attr_dim': 0, 'homophily': 0.399, 'realized_mixing': 0.601, 'components': 1}
+{'dataset': 'mu0.4g2', 'nodes': 5000, 'edges': 67554, 'K': 137, 'attr_dim': 0, 'homophily': 0.399, 'realized_mixing': 0.601, 'components': 1}
+{'dataset': 'mu0.4g3', 'nodes': 5000, 'edges': 67488, 'K': 134, 'attr_dim': 0, 'homophily': 0.399, 'realized_mixing': 0.601, 'components': 1}
+{'dataset': 'mu0.5g1', 'nodes': 5000, 'edges': 68426, 'K': 134, 'attr_dim': 0, 'homophily': 0.28, 'realized_mixing': 0.72, 'components': 1}
+{'dataset': 'mu0.5g2', 'nodes': 5000, 'edges': 68599, 'K': 132, 'attr_dim': 0, 'homophily': 0.282, 'realized_mixing': 0.718, 'components': 1}
+{'dataset': 'mu0.5g3', 'nodes': 5000, 'edges': 68310, 'K': 133, 'attr_dim': 0, 'homophily': 0.281, 'realized_mixing': 0.719, 'components': 1}
+{'dataset': 'mu0.6g1', 'nodes': 5000, 'edges': 68767, 'K': 137, 'attr_dim': 0, 'homophily': 0.176, 'realized_mixing': 0.824, 'components': 1}
+{'dataset': 'mu0.6g2', 'nodes': 5000, 'edges': 68428, 'K': 130, 'attr_dim': 0, 'homophily': 0.174, 'realized_mixing': 0.826, 'components': 1}
+{'dataset': 'mu0.6g3', 'nodes': 5000, 'edges': 69023, 'K': 133, 'attr_dim': 0, 'homophily': 0.176, 'realized_mixing': 0.824, 'components': 1}
+{'dataset': 'mu0.7g1', 'nodes': 5000, 'edges': 69332, 'K': 133, 'attr_dim': 0, 'homophily': 0.097, 'realized_mixing': 0.903, 'components': 1}
+{'dataset': 'mu0.7g2', 'nodes': 5000, 'edges': 69148, 'K': 139, 'attr_dim': 0, 'homophily': 0.096, 'realized_mixing': 0.904, 'components': 1}
+{'dataset': 'mu0.7g3', 'nodes': 5000, 'edges': 69011, 'K': 134, 'attr_dim': 0, 'homophily': 0.097, 'realized_mixing': 0.903, 'components': 1}
+{'dataset': 'mu0.8g1', 'nodes': 5000, 'edges': 68303, 'K': 130, 'attr_dim': 0, 'homophily': 0.042, 'realized_mixing': 0.958, 'components': 1}
+{'dataset': 'mu0.8g2', 'nodes': 5000, 'edges': 68214, 'K': 130, 'attr_dim': 0, 'homophily': 0.041, 'realized_mixing': 0.959, 'components': 1}
+{'dataset': 'mu0.8g3', 'nodes': 5000, 'edges': 68280, 'K': 132, 'attr_dim': 0, 'homophily': 0.041, 'realized_mixing': 0.959, 'components': 1}
+{'dataset': 'mu0.1g4', 'nodes': 5000, 'edges': 62508, 'K': 140, 'attr_dim': 0, 'homophily': 0.84, 'realized_mixing': 0.16, 'components': 1}
+{'dataset': 'mu0.1g5', 'nodes': 5000, 'edges': 63438, 'K': 132, 'attr_dim': 0, 'homophily': 0.84, 'realized_mixing': 0.16, 'components': 1}
+{'dataset': 'mu0.1g6', 'nodes': 5000, 'edges': 63022, 'K': 135, 'attr_dim': 0, 'homophily': 0.84, 'realized_mixing': 0.16, 'components': 1}
+{'dataset': 'mu0.2g4', 'nodes': 5000, 'edges': 65466, 'K': 138, 'attr_dim': 0, 'homophily': 0.681, 'realized_mixing': 0.319, 'components': 1}
+{'dataset': 'mu0.2g5', 'nodes': 5000, 'edges': 64557, 'K': 132, 'attr_dim': 0, 'homophily': 0.682, 'realized_mixing': 0.318, 'components': 1}
+{'dataset': 'mu0.2g6', 'nodes': 5000, 'edges': 64049, 'K': 133, 'attr_dim': 0, 'homophily': 0.681, 'realized_mixing': 0.319, 'components': 1}
+{'dataset': 'mu0.3g4', 'nodes': 5000, 'edges': 66017, 'K': 137, 'attr_dim': 0, 'homophily': 0.534, 'realized_mixing': 0.466, 'components': 1}
+{'dataset': 'mu0.3g5', 'nodes': 5000, 'edges': 66481, 'K': 135, 'attr_dim': 0, 'homophily': 0.536, 'realized_mixing': 0.464, 'components': 1}
+{'dataset': 'mu0.3g6', 'nodes': 5000, 'edges': 66295, 'K': 135, 'attr_dim': 0, 'homophily': 0.534, 'realized_mixing': 0.466, 'components': 1}
+{'dataset': 'mu0.4g4', 'nodes': 5000, 'edges': 67747, 'K': 136, 'attr_dim': 0, 'homophily': 0.399, 'realized_mixing': 0.601, 'components': 1}
+{'dataset': 'mu0.4g5', 'nodes': 5000, 'edges': 67918, 'K': 137, 'attr_dim': 0, 'homophily': 0.4, 'realized_mixing': 0.6, 'components': 1}
+{'dataset': 'mu0.4g6', 'nodes': 5000, 'edges': 67511, 'K': 134, 'attr_dim': 0, 'homophily': 0.4, 'realized_mixing': 0.6, 'components': 1}
+{'dataset': 'mu0.5g4', 'nodes': 5000, 'edges': 68332, 'K': 132, 'attr_dim': 0, 'homophily': 0.278, 'realized_mixing': 0.722, 'components': 1}
+{'dataset': 'mu0.5g5', 'nodes': 5000, 'edges': 68790, 'K': 138, 'attr_dim': 0, 'homophily': 0.278, 'realized_mixing': 0.722, 'components': 1}
+{'dataset': 'mu0.5g6', 'nodes': 5000, 'edges': 69206, 'K': 133, 'attr_dim': 0, 'homophily': 0.28, 'realized_mixing': 0.72, 'components': 1}
+{'dataset': 'mu0.6g4', 'nodes': 5000, 'edges': 69654, 'K': 132, 'attr_dim': 0, 'homophily': 0.175, 'realized_mixing': 0.825, 'components': 1}
+{'dataset': 'mu0.6g5', 'nodes': 5000, 'edges': 68464, 'K': 140, 'attr_dim': 0, 'homophily': 0.177, 'realized_mixing': 0.823, 'components': 1}
+{'dataset': 'mu0.6g6', 'nodes': 5000, 'edges': 69092, 'K': 133, 'attr_dim': 0, 'homophily': 0.176, 'realized_mixing': 0.824, 'components': 1}
+{'dataset': 'mu0.7g4', 'nodes': 5000, 'edges': 68420, 'K': 130, 'attr_dim': 0, 'homophily': 0.096, 'realized_mixing': 0.904, 'components': 1}
+{'dataset': 'mu0.7g5', 'nodes': 5000, 'edges': 69035, 'K': 137, 'attr_dim': 0, 'homophily': 0.096, 'realized_mixing': 0.904, 'components': 1}
+{'dataset': 'mu0.7g6', 'nodes': 5000, 'edges': 68810, 'K': 133, 'attr_dim': 0, 'homophily': 0.098, 'realized_mixing': 0.902, 'components': 1}
+{'dataset': 'mu0.8g4', 'nodes': 5000, 'edges': 69148, 'K': 135, 'attr_dim': 0, 'homophily': 0.041, 'realized_mixing': 0.959, 'components': 1}
+{'dataset': 'mu0.8g5', 'nodes': 5000, 'edges': 68822, 'K': 132, 'attr_dim': 0, 'homophily': 0.041, 'realized_mixing': 0.959, 'components': 1}
+{'dataset': 'mu0.8g6', 'nodes': 5000, 'edges': 67347, 'K': 131, 'attr_dim': 0, 'homophily': 0.042, 'realized_mixing': 0.958, 'components': 1}
+             dataset  nodes   edges    K  attr_dim  homophily  realized_mixing  components
+0               lfr6   5000   68922  129         0      0.176            0.824           1
+1               lfr7   5000   68950  129         0      0.097            0.903           1
+2               wiki   2405   11596   17      4973      0.610            0.390          45
+3        blogcatalog   5196  171743    6      8189      0.401            0.599           1
+4          chameleon   2277   31371    5      2325      0.230            0.770           1
+5           squirrel   5201  198353    5      2089      0.222            0.778           1
+6              actor   7600   26659    5       932      0.217            0.783           1
+7        coauthor-cs  18333   81894   15      6805      0.808            0.192           1
+8     het_t2_c1.1_g1   5000   67822   69         0      0.457            0.543           1
+9     het_t2_c1.1_g2   5000   66948   65         0      0.455            0.545           1
+10    het_t2_c1.1_g3   5000   68428   62         0      0.458            0.542           1
+11      het_t2_c2_g1   5000   67889   99         0      0.451            0.549           1
+12      het_t2_c2_g2   5000   69132   99         0      0.455            0.545           1
+13      het_t2_c2_g3   5000   67862  104         0      0.453            0.547           1
+14  het_t2.5_c1.1_g1   5000   65243   65         0      0.437            0.563           1
+15  het_t2.5_c1.1_g2   5000   66434   62         0      0.437            0.563           1
+16  het_t2.5_c1.1_g3   5000   67194   66         0      0.441            0.559           1
+17    het_t2.5_c2_g1   5000   65227   95         0      0.436            0.564           1
+18    het_t2.5_c2_g2   5000   65406  103         0      0.436            0.564           1
+19    het_t2.5_c2_g3   5000   65902   91         0      0.436            0.564           1
+20    het_t3_c1.1_g1   5000   61380   72         0      0.426            0.574           1
+21    het_t3_c1.1_g2   5000   60698   67         0      0.425            0.575           1
+22    het_t3_c1.1_g3   5000   61614   59         0      0.428            0.572           1
+23      het_t3_c2_g1   5000   61447   98         0      0.425            0.575           1
+24      het_t3_c2_g2   5000   62227  119         0      0.425            0.575           1
+25      het_t3_c2_g3   5000   61129  101         0      0.424            0.576           1
+26           mu0.1g1   5000   62858  132         0      0.840            0.160           1
+27           mu0.1g2   5000   62419  135         0      0.839            0.161           1
+28           mu0.1g3   5000   63214  136         0      0.840            0.160           1
+29           mu0.2g1   5000   64379  136         0      0.682            0.318           1
+30           mu0.2g2   5000   64856  135         0      0.683            0.317           1
+31           mu0.2g3   5000   65192  135         0      0.682            0.318           1
+32           mu0.3g1   5000   66419  131         0      0.534            0.466           1
+33           mu0.3g2   5000   66818  136         0      0.535            0.465           1
+34           mu0.3g3   5000   66770  138         0      0.534            0.466           1
+35           mu0.4g1   5000   67632  133         0      0.399            0.601           1
+36           mu0.4g2   5000   67554  137         0      0.399            0.601           1
+37           mu0.4g3   5000   67488  134         0      0.399            0.601           1
+38           mu0.5g1   5000   68426  134         0      0.280            0.720           1
+39           mu0.5g2   5000   68599  132         0      0.282            0.718           1
+40           mu0.5g3   5000   68310  133         0      0.281            0.719           1
+41           mu0.6g1   5000   68767  137         0      0.176            0.824           1
+42           mu0.6g2   5000   68428  130         0      0.174            0.826           1
+43           mu0.6g3   5000   69023  133         0      0.176            0.824           1
+44           mu0.7g1   5000   69332  133         0      0.097            0.903           1
+45           mu0.7g2   5000   69148  139         0      0.096            0.904           1
+46           mu0.7g3   5000   69011  134         0      0.097            0.903           1
+47           mu0.8g1   5000   68303  130         0      0.042            0.958           1
+48           mu0.8g2   5000   68214  130         0      0.041            0.959           1
+49           mu0.8g3   5000   68280  132         0      0.041            0.959           1
+50           mu0.1g4   5000   62508  140         0      0.840            0.160           1
+51           mu0.1g5   5000   63438  132         0      0.840            0.160           1
+52           mu0.1g6   5000   63022  135         0      0.840            0.160           1
+53           mu0.2g4   5000   65466  138         0      0.681            0.319           1
+54           mu0.2g5   5000   64557  132         0      0.682            0.318           1
+55           mu0.2g6   5000   64049  133         0      0.681            0.319           1
+56           mu0.3g4   5000   66017  137         0      0.534            0.466           1
+57           mu0.3g5   5000   66481  135         0      0.536            0.464           1
+58           mu0.3g6   5000   66295  135         0      0.534            0.466           1
+59           mu0.4g4   5000   67747  136         0      0.399            0.601           1
+60           mu0.4g5   5000   67918  137         0      0.400            0.600           1
+61           mu0.4g6   5000   67511  134         0      0.400            0.600           1
+62           mu0.5g4   5000   68332  132         0      0.278            0.722           1
+63           mu0.5g5   5000   68790  138         0      0.278            0.722           1
+64           mu0.5g6   5000   69206  133         0      0.280            0.720           1
+65           mu0.6g4   5000   69654  132         0      0.175            0.825           1
+66           mu0.6g5   5000   68464  140         0      0.177            0.823           1
+67           mu0.6g6   5000   69092  133         0      0.176            0.824           1
+68           mu0.7g4   5000   68420  130         0      0.096            0.904           1
+69           mu0.7g5   5000   69035  137         0      0.096            0.904           1
+70           mu0.7g6   5000   68810  133         0      0.098            0.902           1
+71           mu0.8g4   5000   69148  135         0      0.041            0.959           1
+72           mu0.8g5   5000   68822  132         0      0.041            0.959           1
+73           mu0.8g6   5000   67347  131         0      0.042            0.958           1

@@ -1,0 +1,18 @@
+OS: Windows-10-10.0.26200-SP0
+Python: 3.11.17 | packaged by conda-forge | (main, Oct 13 2026, 16:36:10) [MSC v.1944 64 bit (AMD64)]
+CPU: 13th Gen Intel(R) Core(TM) i7-13700HX
+RAM (GB): 15.7
+Cores / logical processors: 16 / 24
+PyTorch: 2.14.1+cu126 | CUDA (build): 12.6 | cuDNN: 91002
+GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU | memory 6.0 GB
+NVIDIA driver: 610.91
+torch_geometric: 2.8.1
+pyagc: 1.1.2
+numpy: 2.4.6
+scipy: 1.17.1
+sklearn: 1.9.1
+networkx: 3.6.1
+igraph: 1.0.0
+leidenalg: 0.12.0
+pandas: 3.0.6
+matplotlib: 3.11.2

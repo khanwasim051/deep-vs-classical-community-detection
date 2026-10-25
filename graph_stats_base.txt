@@ -1,0 +1,27 @@
+{'dataset': 'email-eu-core', 'nodes': 1005, 'edges': 16064, 'K': 42, 'attr_dim': 0, 'homophily': 0.336, 'realized_mixing': 0.664, 'components': 20}
+{'dataset': 'football', 'nodes': 115, 'edges': 613, 'K': 12, 'attr_dim': 0, 'homophily': 0.643, 'realized_mixing': 0.357, 'components': 1}
+{'dataset': 'dolphins', 'nodes': 62, 'edges': 159, 'K': 2, 'attr_dim': 0, 'homophily': 0.962, 'realized_mixing': 0.038, 'components': 1}
+{'dataset': 'ukfaculty', 'nodes': 79, 'edges': 552, 'K': 3, 'attr_dim': 0, 'homophily': 0.824, 'realized_mixing': 0.176, 'components': 1}
+{'dataset': 'kki', 'nodes': 2238, 'edges': 4019, 'K': 83, 'attr_dim': 0, 'homophily': 1.0, 'realized_mixing': 0.0, 'components': 83}
+{'dataset': 'cora', 'nodes': 2708, 'edges': 5278, 'K': 7, 'attr_dim': 1433, 'homophily': 0.81, 'realized_mixing': 0.19, 'components': 78}
+{'dataset': 'citeseer', 'nodes': 3327, 'edges': 4552, 'K': 6, 'attr_dim': 3703, 'homophily': 0.736, 'realized_mixing': 0.264, 'components': 438}
+{'dataset': 'pubmed', 'nodes': 19717, 'edges': 44324, 'K': 3, 'attr_dim': 500, 'homophily': 0.802, 'realized_mixing': 0.198, 'components': 1}
+{'dataset': 'amazon-photo', 'nodes': 7650, 'edges': 119081, 'K': 8, 'attr_dim': 745, 'homophily': 0.827, 'realized_mixing': 0.173, 'components': 136}
+{'dataset': 'lfr1', 'nodes': 2048, 'edges': 37794, 'K': 23, 'attr_dim': 0, 'homophily': 0.42, 'realized_mixing': 0.58, 'components': 1}
+{'dataset': 'lfr2', 'nodes': 5000, 'edges': 68675, 'K': 129, 'attr_dim': 0, 'homophily': 0.281, 'realized_mixing': 0.719, 'components': 1}
+{'dataset': 'lfr3', 'nodes': 5000, 'edges': 64794, 'K': 129, 'attr_dim': 0, 'homophily': 0.682, 'realized_mixing': 0.318, 'components': 1}
+{'dataset': 'lfr4', 'nodes': 2048, 'edges': 36993, 'K': 23, 'attr_dim': 0, 'homophily': 0.698, 'realized_mixing': 0.302, 'components': 1}
+          dataset  nodes   edges    K  attr_dim  homophily  realized_mixing  components
+0   email-eu-core   1005   16064   42         0      0.336            0.664          20
+1        football    115     613   12         0      0.643            0.357           1
+2        dolphins     62     159    2         0      0.962            0.038           1
+3       ukfaculty     79     552    3         0      0.824            0.176           1
+4             kki   2238    4019   83         0      1.000            0.000          83
+5            cora   2708    5278    7      1433      0.810            0.190          78
+6        citeseer   3327    4552    6      3703      0.736            0.264         438
+7          pubmed  19717   44324    3       500      0.802            0.198           1
+8    amazon-photo   7650  119081    8       745      0.827            0.173         136
+9            lfr1   2048   37794   23         0      0.420            0.580           1
+10           lfr2   5000   68675  129         0      0.281            0.719           1
+11           lfr3   5000   64794  129         0      0.682            0.318           1
+12           lfr4   2048   36993   23         0      0.698            0.302           1
