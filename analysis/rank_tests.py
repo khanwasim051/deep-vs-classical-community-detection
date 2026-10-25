@@ -58,6 +58,14 @@ out["rob"] = [
     [f"Oracle: label-selected configuration ({nb(DS, orc)} graphs)", fried(blocks(DS, src=orc))],
     [f"Known K for all: Leiden-K and SpecAttr added ({len(blocks(COMP, methods=M16 + ['LeidenK', 'SpecAttr']))} graphs)", fried(blocks(COMP, methods=M16 + ["LeidenK", "SpecAttr"]))],
 ]
+# matched-dimension ablation: KMeans-feat given exactly the learned methods' structural input dimension
+kmm = runs[(runs.method == "KMeans-featM") & ~runs.folder.str.contains("sweep|syn|repro")].groupby("dataset").ARI.mean()
+matched = {"ARI": {d: dict(out["tables"]["ARI"][d]) for d in DS}}
+for d in DS:
+    if d in kmm.index:
+        matched["ARI"][d]["KMeans-feat"] = [float(kmm[d]), 0.0]
+out["rob"].append(["KMeans-feat with matched input dimension", fried(blocks(COMP, src=matched))])
+out["kmm_changed"] = [d for d in DS if d in kmm.index and abs(float(kmm[d]) - out["tables"]["ARI"][d]["KMeans-feat"][0]) > 5e-4]
 out["EQ"] = E["selected"]; out["EQ_oracle"] = E["oracle"]
 sds = [out["tables"]["ARI"][d][m][1] for d in COMP for m in M16]
 out["seed_sd_median"] = float(np.nanmedian(sds)); out["seed_sd_p90"] = float(np.nanpercentile(sds, 90))

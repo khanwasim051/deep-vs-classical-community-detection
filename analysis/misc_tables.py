@@ -36,8 +36,15 @@ for ds in ["cora", "amazon-photo"]:
 T16 = [dict(d=ds, nmi_plain=g(ds, "Spectral", "NMI"), nmi_reg=g(ds, "RegSpectral", "NMI"), ari_plain=g(ds, "Spectral", "ARI"),
             ari_reg=g(ds, "RegSpectral", "ARI")) for ds in ["cora", "citeseer", "pubmed", "amazon-photo", "kki"]]
 # Table 17: NMI between two independent uniform random labellings with K groups on n nodes (mean of five draws)
+from sklearn.metrics import adjusted_mutual_info_score as ami, adjusted_rand_score as ari
 r = np.random.default_rng(0)
-T17 = [dict(graph=nm_, n=n, K=K, nmi=float(np.mean([nmi(r.integers(0, K, n), r.integers(0, K, n)) for _ in range(5)])))
+def rand_scores(n, K, draws=1000):
+    v = np.array([[nmi(a, b), ami(a, b), ari(a, b)] for a, b in ((r.integers(0, K, n), r.integers(0, K, n)) for _ in range(draws))])
+    return v.mean(0), v.std(0)
+T17 = [dict(graph=nm_, n=n, K=K, nmi=float(m[0]), nmi_sd=float(sd[0]), ami=float(m[1]), ami_sd=float(sd[1]), ari=float(m[2]), draws=1000)
+       for nm_, n, K in [("Email-Eu-core", 1005, 42), ("KKI", 2238, 83), ("LFR-1 / LFR-4", 2048, 23), ("LFR-2, -3, -6, -7", 5000, 129),
+                         ("Sweep graphs", 5000, 133), ("Cora", 2708, 7), ("Football", 115, 12)] for m, sd in [rand_scores(n, K)]]
+_unused = [dict(graph=nm_, n=n, K=K, nmi=float(np.mean([nmi(r.integers(0, K, n), r.integers(0, K, n)) for _ in range(5)])))
        for nm_, n, K in [("Email-Eu-core", 1005, 42), ("KKI", 2238, 83), ("LFR-1 / LFR-4", 2048, 23), ("LFR-2, -3, -6, -7", 5000, 129),
                          ("Sweep graphs", 5000, 133), ("Cora", 2708, 7), ("Football", 115, 12)]]
 # Table 19

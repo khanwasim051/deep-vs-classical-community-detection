@@ -1,4 +1,9 @@
-# Reproducing "Do deep graph clustering methods beat classical community detection?"
+# A reproducible reassessment of neural and graph-filtering clustering against classical community detection on small and medium graphs
+
+Code, data and per-run results for the paper of the same title (Wasim Khan, submitted to *Information Sciences*).
+Archived at Zenodo: https://doi.org/10.5281/zenodo.23646201
+
+## Contents
 
 This repository contains everything needed to reproduce the paper: the code of every method and baseline, the
 unchanged PyAGC reference scripts, the generated LFR graphs, every per-run result, and the analysis that turns
