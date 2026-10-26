@@ -1,0 +1,87 @@
+Runs saved per dataset (rows) and method (columns); '.' = complete, a number = runs saved so far
+
+method        CCASSG[PyAGC-struct] DGI[PyAGC-struct] GAE[PyAGC-struct] KMeans-featM LeidenK MS2CAG[PyAGC-struct] NS4GC[PyAGC-struct] SSGC[PyAGC-struct] SpecAttr
+dataset                                                                                                                                                         
+email-eu-core                    0                 0                 0            .       .                    0                   0                  0        .
+football                         0                 0                 0            .       .                    0                   0                  0        .
+dolphins                         0                 0                 0            .       .                    0                   0                  0        .
+ukfaculty                        0                 0                 0            .       .                    0                   0                  0        .
+kki                              0                 0                 0            .       .                    0                   0                  0        .
+amazon-photo                     .                 .                 .            .       .                    .                   .                  .        .
+citeseer                         .                 .                 .            .       .                    .                   .                  .        .
+cora                             .                 .                 .            .       .                    .                   .                  .        .
+pubmed                           .                 .                 .            .       .                    .                   .                  .        .
+lfr1                             0                 0                 0            .       .                    0                   0                  0        .
+lfr2                             0                 0                 0            .       .                    0                   0                  0        .
+lfr3                             0                 0                 0            .       .                    0                   0                  0        .
+lfr4                             0                 0                 0            .       .                    0                   0                  0        .
+lfr6                             0                 0                 0            .       .                    0                   0                  0        .
+lfr7                             0                 0                 0            .       .                    0                   0                  0        .
+
+66 of 135 combinations incomplete
+  email-eu-core      CCASSG[PyAGC-struct] 0/5 runs
+  email-eu-core      DGI[PyAGC-struct]  0/5 runs
+  email-eu-core      GAE[PyAGC-struct]  0/5 runs
+  email-eu-core      MS2CAG[PyAGC-struct] 0/5 runs
+  email-eu-core      NS4GC[PyAGC-struct] 0/5 runs
+  email-eu-core      SSGC[PyAGC-struct] 0/5 runs
+  football           CCASSG[PyAGC-struct] 0/5 runs
+  football           DGI[PyAGC-struct]  0/5 runs
+  football           GAE[PyAGC-struct]  0/5 runs
+  football           MS2CAG[PyAGC-struct] 0/5 runs
+  football           NS4GC[PyAGC-struct] 0/5 runs
+  football           SSGC[PyAGC-struct] 0/5 runs
+  dolphins           CCASSG[PyAGC-struct] 0/5 runs
+  dolphins           DGI[PyAGC-struct]  0/5 runs
+  dolphins           GAE[PyAGC-struct]  0/5 runs
+  dolphins           MS2CAG[PyAGC-struct] 0/5 runs
+  dolphins           NS4GC[PyAGC-struct] 0/5 runs
+  dolphins           SSGC[PyAGC-struct] 0/5 runs
+  ukfaculty          CCASSG[PyAGC-struct] 0/5 runs
+  ukfaculty          DGI[PyAGC-struct]  0/5 runs
+  ukfaculty          GAE[PyAGC-struct]  0/5 runs
+  ukfaculty          MS2CAG[PyAGC-struct] 0/5 runs
+  ukfaculty          NS4GC[PyAGC-struct] 0/5 runs
+  ukfaculty          SSGC[PyAGC-struct] 0/5 runs
+  kki                CCASSG[PyAGC-struct] 0/5 runs
+  kki                DGI[PyAGC-struct]  0/5 runs
+  kki                GAE[PyAGC-struct]  0/5 runs
+  kki                MS2CAG[PyAGC-struct] 0/5 runs
+  kki                NS4GC[PyAGC-struct] 0/5 runs
+  kki                SSGC[PyAGC-struct] 0/5 runs
+  lfr1               CCASSG[PyAGC-struct] 0/5 runs
+  lfr1               DGI[PyAGC-struct]  0/5 runs
+  lfr1               GAE[PyAGC-struct]  0/5 runs
+  lfr1               MS2CAG[PyAGC-struct] 0/5 runs
+  lfr1               NS4GC[PyAGC-struct] 0/5 runs
+  lfr1               SSGC[PyAGC-struct] 0/5 runs
+  lfr2               CCASSG[PyAGC-struct] 0/5 runs
+  lfr2               DGI[PyAGC-struct]  0/5 runs
+  lfr2               GAE[PyAGC-struct]  0/5 runs
+  lfr2               MS2CAG[PyAGC-struct] 0/5 runs
+  lfr2               NS4GC[PyAGC-struct] 0/5 runs
+  lfr2               SSGC[PyAGC-struct] 0/5 runs
+  lfr3               CCASSG[PyAGC-struct] 0/5 runs
+  lfr3               DGI[PyAGC-struct]  0/5 runs
+  lfr3               GAE[PyAGC-struct]  0/5 runs
+  lfr3               MS2CAG[PyAGC-struct] 0/5 runs
+  lfr3               NS4GC[PyAGC-struct] 0/5 runs
+  lfr3               SSGC[PyAGC-struct] 0/5 runs
+  lfr4               CCASSG[PyAGC-struct] 0/5 runs
+  lfr4               DGI[PyAGC-struct]  0/5 runs
+  lfr4               GAE[PyAGC-struct]  0/5 runs
+  lfr4               MS2CAG[PyAGC-struct] 0/5 runs
+  lfr4               NS4GC[PyAGC-struct] 0/5 runs
+  lfr4               SSGC[PyAGC-struct] 0/5 runs
+  lfr6               CCASSG[PyAGC-struct] 0/5 runs
+  lfr6               DGI[PyAGC-struct]  0/5 runs
+  lfr6               GAE[PyAGC-struct]  0/5 runs
+  lfr6               MS2CAG[PyAGC-struct] 0/5 runs
+  lfr6               NS4GC[PyAGC-struct] 0/5 runs
+  lfr6               SSGC[PyAGC-struct] 0/5 runs
+  lfr7               CCASSG[PyAGC-struct] 0/5 runs
+  lfr7               DGI[PyAGC-struct]  0/5 runs
+  lfr7               GAE[PyAGC-struct]  0/5 runs
+  lfr7               MS2CAG[PyAGC-struct] 0/5 runs
+  lfr7               NS4GC[PyAGC-struct] 0/5 runs
+  lfr7               SSGC[PyAGC-struct] 0/5 runs

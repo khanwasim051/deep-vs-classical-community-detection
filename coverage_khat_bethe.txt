@@ -1,0 +1,22 @@
+Runs saved per dataset (rows) and method (columns); '.' = complete, a number = runs saved so far
+
+method        CCASSG@KhatBH DAEGC@KhatBH DGI@KhatBH DMoN@KhatBH DinkNet@KhatBH GAE@KhatBH KMeans-feat@KhatBH MS2CAG@KhatBH MixFlow-CD_khatBH NS4GC@KhatBH RegSpectral@KhatBH SSGC@KhatBH SpecAttr@KhatBH
+dataset                                                                                                                                                                                                 
+email-eu-core             .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+football                  .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+dolphins                  .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+ukfaculty                 .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+kki                       .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+amazon-photo              .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+citeseer                  .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+cora                      .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+pubmed                    .            .          .           .              .          .                  .             .                 .            4                  .           .               .
+lfr1                      .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+lfr2                      .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+lfr3                      .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+lfr4                      .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+lfr6                      .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+lfr7                      .            .          .           .              .          .                  .             .                 .            .                  .           .               .
+
+1 of 195 combinations incomplete
+  pubmed             NS4GC[PyAGC]@KhatBH 4/5 runs

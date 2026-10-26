@@ -113,6 +113,7 @@ def main():
     p.add_argument("--features", default="auto", choices=["auto", "structural", "l1"],
                    help="structural = structural features even on attributed graphs (topology-only control)")
     p.add_argument("--k_hat", default="", help="K-unknown setting: json file {dataset: K_hat}")
+    p.add_argument("--khat_label", default="Khat", help="suffix for method names in the K-unknown setting (e.g. KhatBH for a second estimator)")
     a = p.parse_args()
     khat = json.load(open(a.k_hat)) if a.k_hat else {}
     os.makedirs(a.out, exist_ok=True)
@@ -126,7 +127,7 @@ def main():
             if a.features == "l1":
                 label = label.replace("]", "-l1]")
             if a.k_hat:
-                label += "@Khat"
+                label += "@" + a.khat_label
             done = repair_and_done(path, label)
             for seed in range(a.runs):
                 if seed in done:

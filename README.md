@@ -11,11 +11,13 @@ the results into the paper's tables and figures.
 
 ## 1. Environment
 
-Tested on Windows with an NVIDIA RTX 3050 Laptop GPU (6 GB) and 16 GB of RAM; see `env_report.txt` for the
-exact CPU, driver and library versions.
+Tested on Windows 11 (build 26200; Python reports it as Windows-10-10.0.26200) with an NVIDIA RTX 3050 Laptop GPU (6 GB)
+and 16 GB of RAM: Python 3.11.17, PyTorch 2.14.1 (CUDA 12.6, cuDNN 9.10), PyTorch Geometric 2.8.1, PyAGC 1.1.2,
+NumPy 2.4.6, SciPy 1.17.1, scikit-learn 1.9.1, NetworkX 3.6.1, python-igraph 1.0.0, leidenalg 0.12.0, pandas 3.0.6.
+`env_report.txt` gives the exact CPU and driver; `environment.yml` and `requirements_frozen.txt` give every package.
 
 ```
-conda env create -f environment.yml        # or: conda create -n mixflow python=3.10; pip install -r requirements_frozen.txt
+conda env create -f environment.yml        # or: conda create -n mixflow python=3.11; pip install -r requirements_frozen.txt
 conda activate mixflow
 ```
 
@@ -41,6 +43,7 @@ stopped and restarted (finished runs are skipped). The 60-minute time limit per 
 | `run_step15.bat` | six further attributed graphs; classical methods on the 42 new LFR graphs | Sections 5, 6.1, 6.2 |
 | `run_step16.bat` | deep methods on the 66 synthetic graphs | Sections 6.1, 6.2 |
 | `run_step17.bat` | environment report; reproduction check of the reference code | Section 4.8, Table 4 |
+| `run_step18.bat` | unknown-K setting with the Bethe Hessian estimate of K (`estimate_k.py --method bethe`) | Section 5.6, Table 12(b), Supplementary S11 |
 
 Amazon-Computers and the 20,000-node LFR-5 graph appear in the early runs but were excluded from the paper (Section 4.1).
 

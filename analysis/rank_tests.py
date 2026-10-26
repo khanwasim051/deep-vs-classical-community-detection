@@ -71,7 +71,7 @@ sds = [out["tables"]["ARI"][d][m][1] for d in COMP for m in M16]
 out["seed_sd_median"] = float(np.nanmedian(sds)); out["seed_sd_p90"] = float(np.nanpercentile(sds, 90))
 # cost and budget
 cost = {}
-for m in M16:
+for m in M16 + ["LeidenK", "SpecAttr"]:
     x = R[(R.method == m) & R.dataset.isin(COMP)]
     xa = R[(R.method == m) & R.dataset.isin(DS)]
     fails = int(sum(len(str(v).split(",")) for v in xa.missing if isinstance(v, str) and v))
@@ -79,7 +79,7 @@ for m in M16:
     over6 = int((xa.mem_sel > 6144).sum())
     ncfg = int(xa.n_cand.max())
     cost[m] = dict(total=float(x.t_sel.sum()), median=float(x.t_sel.median()), mem=float(xa.mem_sel.max()), search=float(x.t_search.sum()),
-                   ncand=ncfg, fails=fails, graphs_ok=int((xa.n_cand > 0).sum()), mean_ari=float(x.ARI_sel.mean()), rank=out["FA"]["ranks"][m], over6=over6)
+                   ncand=ncfg, fails=fails, graphs_ok=int((xa.n_cand > 0).sum()), mean_ari=float(x.ARI_sel.mean()), rank=out["FA"]["ranks"].get(m), over6=over6)
 out["cost"] = cost
 summ = {}
 for m in TUNED:
@@ -102,5 +102,5 @@ json.dump(out, open("sel.json", "w"), indent=1, default=float)
 for lab, fr in out["rob"]:
     print(f"{lab:62s} N={fr['N']:2d} CD={fr['cd']:.2f} top3={list(fr['ranks'].items())[:3]} RegSpec={fr['ranks']['RegSpectral']} ({list(fr['ranks']).index('RegSpectral')+1})")
 for m, v in summ.items(): print(m, {k: (round(x, 3) if isinstance(x, float) else x) for k, x in v.items()})
-for m, c in cost.items(): print(m, {k: round(v, 3) for k, v in c.items()})
+for m, c in cost.items(): print(m, {k: (round(v, 3) if v is not None else None) for k, v in c.items()})
 print(out["seed_sd_median"], out["seed_sd_p90"], COMP)

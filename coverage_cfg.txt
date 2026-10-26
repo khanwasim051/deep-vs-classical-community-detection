@@ -1,0 +1,148 @@
+Runs saved per dataset (rows) and method (columns); '.' = complete, a number = runs saved so far
+
+method        CCASSG[PyAGC-Cora] CCASSG[PyAGC-HM] CCASSG[PyAGC-Physics] DAEGC[PyAGC-Cora] DAEGC[PyAGC-HM] DAEGC[PyAGC-Physics] DGI[PyAGC-Cora] DGI[PyAGC-HM] DGI[PyAGC-Physics] DMoN[PyAGC-Cora] DMoN[PyAGC-HM] DMoN[PyAGC-Physics] DinkNet[PyAGC-Cora] DinkNet[PyAGC-HM] DinkNet[PyAGC-Physics] GAE[PyAGC-Cora] GAE[PyAGC-HM] GAE[PyAGC-Physics] Leiden_r0.5 Leiden_r2 Leiden_r4 Louvain_r0.5 Louvain_r2 Louvain_r4 MS2CAG[PyAGC-Cora] MS2CAG[PyAGC-HM] MS2CAG[PyAGC-Physics] MixFlow-CD_cfgB MixFlow-CD_cfgC MixFlow-CD_cfgD NS4GC[PyAGC-Cora] NS4GC[PyAGC-HM] NS4GC[PyAGC-Physics] RegSpectral_t0.25 RegSpectral_t0.5 RegSpectral_t2 SSGC[PyAGC-Cora] SSGC[PyAGC-HM] SSGC[PyAGC-Physics]
+dataset                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+email-eu-core                  0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+football                       0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+dolphins                       0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+ukfaculty                      0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+kki                            0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+amazon-photo                   .                .                     .                 .               .                    .               .             .                  .                .              .                   .                   .                 .                      .               .             .                  .           .         .         .            .          .          .                  .                .                     .               .               .               .                 .               .                    .                 .                .              .                .              .                   .
+citeseer                       0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+cora                           0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+pubmed                         0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               3                    .                 .                .              .                0              .                   .
+lfr1                           0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+lfr2                           0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+lfr3                           0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+lfr4                           0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+lfr6                           0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+lfr7                           0                .                     .                 0               .                    .               0             .                  .                0              .                   .                   0                 .                      .               0             .                  .           .         .         .            .          .          .                  0                .                     .               .               .               .                 0               .                    .                 .                .              .                0              .                   .
+
+127 of 585 combinations incomplete
+  email-eu-core      CCASSG[PyAGC-Cora] 0/5 runs
+  email-eu-core      DAEGC[PyAGC-Cora]  0/5 runs
+  email-eu-core      DGI[PyAGC-Cora]    0/5 runs
+  email-eu-core      DMoN[PyAGC-Cora]   0/5 runs
+  email-eu-core      DinkNet[PyAGC-Cora] 0/5 runs
+  email-eu-core      GAE[PyAGC-Cora]    0/5 runs
+  email-eu-core      MS2CAG[PyAGC-Cora] 0/5 runs
+  email-eu-core      NS4GC[PyAGC-Cora]  0/5 runs
+  email-eu-core      SSGC[PyAGC-Cora]   0/5 runs
+  football           CCASSG[PyAGC-Cora] 0/5 runs
+  football           DAEGC[PyAGC-Cora]  0/5 runs
+  football           DGI[PyAGC-Cora]    0/5 runs
+  football           DMoN[PyAGC-Cora]   0/5 runs
+  football           DinkNet[PyAGC-Cora] 0/5 runs
+  football           GAE[PyAGC-Cora]    0/5 runs
+  football           MS2CAG[PyAGC-Cora] 0/5 runs
+  football           NS4GC[PyAGC-Cora]  0/5 runs
+  football           SSGC[PyAGC-Cora]   0/5 runs
+  dolphins           CCASSG[PyAGC-Cora] 0/5 runs
+  dolphins           DAEGC[PyAGC-Cora]  0/5 runs
+  dolphins           DGI[PyAGC-Cora]    0/5 runs
+  dolphins           DMoN[PyAGC-Cora]   0/5 runs
+  dolphins           DinkNet[PyAGC-Cora] 0/5 runs
+  dolphins           GAE[PyAGC-Cora]    0/5 runs
+  dolphins           MS2CAG[PyAGC-Cora] 0/5 runs
+  dolphins           NS4GC[PyAGC-Cora]  0/5 runs
+  dolphins           SSGC[PyAGC-Cora]   0/5 runs
+  ukfaculty          CCASSG[PyAGC-Cora] 0/5 runs
+  ukfaculty          DAEGC[PyAGC-Cora]  0/5 runs
+  ukfaculty          DGI[PyAGC-Cora]    0/5 runs
+  ukfaculty          DMoN[PyAGC-Cora]   0/5 runs
+  ukfaculty          DinkNet[PyAGC-Cora] 0/5 runs
+  ukfaculty          GAE[PyAGC-Cora]    0/5 runs
+  ukfaculty          MS2CAG[PyAGC-Cora] 0/5 runs
+  ukfaculty          NS4GC[PyAGC-Cora]  0/5 runs
+  ukfaculty          SSGC[PyAGC-Cora]   0/5 runs
+  kki                CCASSG[PyAGC-Cora] 0/5 runs
+  kki                DAEGC[PyAGC-Cora]  0/5 runs
+  kki                DGI[PyAGC-Cora]    0/5 runs
+  kki                DMoN[PyAGC-Cora]   0/5 runs
+  kki                DinkNet[PyAGC-Cora] 0/5 runs
+  kki                GAE[PyAGC-Cora]    0/5 runs
+  kki                MS2CAG[PyAGC-Cora] 0/5 runs
+  kki                NS4GC[PyAGC-Cora]  0/5 runs
+  kki                SSGC[PyAGC-Cora]   0/5 runs
+  citeseer           CCASSG[PyAGC-Cora] 0/5 runs
+  citeseer           DAEGC[PyAGC-Cora]  0/5 runs
+  citeseer           DGI[PyAGC-Cora]    0/5 runs
+  citeseer           DMoN[PyAGC-Cora]   0/5 runs
+  citeseer           DinkNet[PyAGC-Cora] 0/5 runs
+  citeseer           GAE[PyAGC-Cora]    0/5 runs
+  citeseer           MS2CAG[PyAGC-Cora] 0/5 runs
+  citeseer           NS4GC[PyAGC-Cora]  0/5 runs
+  citeseer           SSGC[PyAGC-Cora]   0/5 runs
+  cora               CCASSG[PyAGC-Cora] 0/5 runs
+  cora               DAEGC[PyAGC-Cora]  0/5 runs
+  cora               DGI[PyAGC-Cora]    0/5 runs
+  cora               DMoN[PyAGC-Cora]   0/5 runs
+  cora               DinkNet[PyAGC-Cora] 0/5 runs
+  cora               GAE[PyAGC-Cora]    0/5 runs
+  cora               MS2CAG[PyAGC-Cora] 0/5 runs
+  cora               NS4GC[PyAGC-Cora]  0/5 runs
+  cora               SSGC[PyAGC-Cora]   0/5 runs
+  pubmed             CCASSG[PyAGC-Cora] 0/5 runs
+  pubmed             DAEGC[PyAGC-Cora]  0/5 runs
+  pubmed             DGI[PyAGC-Cora]    0/5 runs
+  pubmed             DMoN[PyAGC-Cora]   0/5 runs
+  pubmed             DinkNet[PyAGC-Cora] 0/5 runs
+  pubmed             GAE[PyAGC-Cora]    0/5 runs
+  pubmed             MS2CAG[PyAGC-Cora] 0/5 runs
+  pubmed             NS4GC[PyAGC-Cora]  0/5 runs
+  pubmed             NS4GC[PyAGC-HM]    3/5 runs
+  pubmed             SSGC[PyAGC-Cora]   0/5 runs
+  lfr1               CCASSG[PyAGC-Cora] 0/5 runs
+  lfr1               DAEGC[PyAGC-Cora]  0/5 runs
+  lfr1               DGI[PyAGC-Cora]    0/5 runs
+  lfr1               DMoN[PyAGC-Cora]   0/5 runs
+  lfr1               DinkNet[PyAGC-Cora] 0/5 runs
+  lfr1               GAE[PyAGC-Cora]    0/5 runs
+  lfr1               MS2CAG[PyAGC-Cora] 0/5 runs
+  lfr1               NS4GC[PyAGC-Cora]  0/5 runs
+  lfr1               SSGC[PyAGC-Cora]   0/5 runs
+  lfr2               CCASSG[PyAGC-Cora] 0/5 runs
+  lfr2               DAEGC[PyAGC-Cora]  0/5 runs
+  lfr2               DGI[PyAGC-Cora]    0/5 runs
+  lfr2               DMoN[PyAGC-Cora]   0/5 runs
+  lfr2               DinkNet[PyAGC-Cora] 0/5 runs
+  lfr2               GAE[PyAGC-Cora]    0/5 runs
+  lfr2               MS2CAG[PyAGC-Cora] 0/5 runs
+  lfr2               NS4GC[PyAGC-Cora]  0/5 runs
+  lfr2               SSGC[PyAGC-Cora]   0/5 runs
+  lfr3               CCASSG[PyAGC-Cora] 0/5 runs
+  lfr3               DAEGC[PyAGC-Cora]  0/5 runs
+  lfr3               DGI[PyAGC-Cora]    0/5 runs
+  lfr3               DMoN[PyAGC-Cora]   0/5 runs
+  lfr3               DinkNet[PyAGC-Cora] 0/5 runs
+  lfr3               GAE[PyAGC-Cora]    0/5 runs
+  lfr3               MS2CAG[PyAGC-Cora] 0/5 runs
+  lfr3               NS4GC[PyAGC-Cora]  0/5 runs
+  lfr3               SSGC[PyAGC-Cora]   0/5 runs
+  lfr4               CCASSG[PyAGC-Cora] 0/5 runs
+  lfr4               DAEGC[PyAGC-Cora]  0/5 runs
+  lfr4               DGI[PyAGC-Cora]    0/5 runs
+  lfr4               DMoN[PyAGC-Cora]   0/5 runs
+  lfr4               DinkNet[PyAGC-Cora] 0/5 runs
+  lfr4               GAE[PyAGC-Cora]    0/5 runs
+  lfr4               MS2CAG[PyAGC-Cora] 0/5 runs
+  lfr4               NS4GC[PyAGC-Cora]  0/5 runs
+  lfr4               SSGC[PyAGC-Cora]   0/5 runs
+  lfr6               CCASSG[PyAGC-Cora] 0/5 runs
+  lfr6               DAEGC[PyAGC-Cora]  0/5 runs
+  lfr6               DGI[PyAGC-Cora]    0/5 runs
+  lfr6               DMoN[PyAGC-Cora]   0/5 runs
+  lfr6               DinkNet[PyAGC-Cora] 0/5 runs
+  lfr6               GAE[PyAGC-Cora]    0/5 runs
+  lfr6               MS2CAG[PyAGC-Cora] 0/5 runs
+  lfr6               NS4GC[PyAGC-Cora]  0/5 runs
+  lfr6               SSGC[PyAGC-Cora]   0/5 runs
+  lfr7               CCASSG[PyAGC-Cora] 0/5 runs
+  lfr7               DAEGC[PyAGC-Cora]  0/5 runs
+  lfr7               DGI[PyAGC-Cora]    0/5 runs
+  lfr7               DMoN[PyAGC-Cora]   0/5 runs
+  lfr7               DinkNet[PyAGC-Cora] 0/5 runs
+  lfr7               GAE[PyAGC-Cora]    0/5 runs
+  lfr7               MS2CAG[PyAGC-Cora] 0/5 runs
+  lfr7               NS4GC[PyAGC-Cora]  0/5 runs
+  lfr7               SSGC[PyAGC-Cora]   0/5 runs

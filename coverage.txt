@@ -1,0 +1,37 @@
+Runs saved per dataset (rows) and method (columns); '.' = complete, a number = runs saved so far
+
+method           CCASSG DAEGC DGI DMoN DinkNet GAE MS2CAG NS4GC SSGC
+dataset                                                             
+email-eu-core         .     .   .    .       .   .      .     .    .
+football              .     .   .    .       .   .      .     .    .
+dolphins              .     .   .    .       .   .      .     .    .
+ukfaculty             .     .   .    .       .   .      .     .    .
+kki                   .     .   .    .       .   .      .     .    .
+amazon-computers      0     0   0    .       0   0      .     0    0
+amazon-photo          .     .   .    .       .   .      .     .    .
+citeseer              .     .   .    .       .   .      .     .    .
+cora                  .     .   .    .       .   .      .     .    .
+pubmed                .     .   .    .       .   .      .     0    .
+lfr1                  .     .   .    .       .   .      .     .    .
+lfr2                  .     .   .    .       .   .      .     .    .
+lfr3                  .     .   .    .       .   .      .     .    .
+lfr4                  .     .   .    .       .   .      .     .    .
+lfr5                  0     0   0    .       0   .      .     0    0
+lfr6                  .     .   .    .       .   .      .     .    .
+lfr7                  .     .   .    .       .   .      .     .    .
+
+14 of 153 combinations incomplete
+  amazon-computers   CCASSG[PyAGC]      0/5 runs
+  amazon-computers   DAEGC[PyAGC]       0/5 runs
+  amazon-computers   DGI[PyAGC]         0/5 runs
+  amazon-computers   DinkNet[PyAGC]     0/5 runs
+  amazon-computers   GAE[PyAGC]         0/5 runs
+  amazon-computers   NS4GC[PyAGC]       0/5 runs
+  amazon-computers   SSGC[PyAGC]        0/5 runs
+  pubmed             NS4GC[PyAGC]       0/5 runs
+  lfr5               CCASSG[PyAGC]      0/5 runs
+  lfr5               DAEGC[PyAGC]       0/5 runs
+  lfr5               DGI[PyAGC]         0/5 runs
+  lfr5               DinkNet[PyAGC]     0/5 runs
+  lfr5               NS4GC[PyAGC]       0/5 runs
+  lfr5               SSGC[PyAGC]        0/5 runs

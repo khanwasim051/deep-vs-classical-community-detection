@@ -6733,7 +6733,42 @@
      "LabelProp": 16.2
     }
    }
+  ],
+  [
+   "KMeans-feat with matched input dimension",
+   {
+    "N": 20,
+    "k": 16,
+    "chi2": 88.64570783132523,
+    "p": 1.7733395407259835e-12,
+    "F": 7.9689342076432546,
+    "cd": 5.158060514879783,
+    "ranks": {
+     "DGI": 5.4,
+     "NS4GC": 5.95,
+     "MS2CAG": 6.025,
+     "SSGC": 6.1,
+     "CCASSG": 6.625,
+     "DinkNet": 7.15,
+     "MixFlow-CD": 7.15,
+     "GAE": 7.85,
+     "DAEGC": 7.975,
+     "KMeans-feat": 8.375,
+     "RegSpectral": 8.725,
+     "DMoN": 10.6,
+     "Louvain": 11.05,
+     "Infomap": 11.225,
+     "Leiden": 11.3,
+     "LabelProp": 14.5
+    }
+   }
   ]
+ ],
+ "kmm_changed": [
+  "lfr2",
+  "lfr3",
+  "lfr6",
+  "lfr7"
  ],
  "EQ": {
   "RegSpectral|all": {
@@ -9744,6 +9779,30 @@
    "graphs_ok": 21,
    "mean_ari": 0.23465599999999998,
    "rank": 14.5,
+   "over6": 0
+  },
+  "LeidenK": {
+   "total": 51.800000000000004,
+   "median": 0.92,
+   "mem": 0.0,
+   "search": 51.800000000000004,
+   "ncand": 1,
+   "fails": 0,
+   "graphs_ok": 21,
+   "mean_ari": 0.46649900000000005,
+   "rank": null,
+   "over6": 0
+  },
+  "SpecAttr": {
+   "total": 65.12,
+   "median": 1.94,
+   "mem": 0.0,
+   "search": 65.12,
+   "ncand": 1,
+   "fails": 0,
+   "graphs_ok": 21,
+   "mean_ari": 0.46529600000000004,
+   "rank": null,
    "over6": 0
   }
  },

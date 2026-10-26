@@ -57,6 +57,47 @@ for ref in ["LeidenK", "RegSpectral", "KMeans-featM"]:
         for m, a in zip(DEEP, holm(np.array([rows[m]["p"] for m in DEEP]))):
             rows[m]["p_holm"] = float(a)
         out[f"{ref}|{name}"] = rows
+# Issue 5: grouped design. Strata are the eight mu levels (six graphs each) and the six (tau1, tau2) cells (three graphs each).
+from scipy.stats import rankdata, ttest_1samp
+STRATA = {"sweep": [[f"mu{mu}g{g}" for g in range(1, 7)] for mu in MUS],
+          "het": [[f"het_t{t}_c{c}_g{g}" for g in (1, 2, 3)] for t in ("2", "2.5", "3") for c in ("1.1", "2")]}
+NPERM = 100000
+def strat_stats(m, ref, strata):
+    X0 = [np.array([ari(g, m) - ari(g, ref) for g in st]) for st in strata]
+    X = X0
+    allx = np.concatenate(X0)
+    # stratified bootstrap: resample graphs within each stratum
+    r2 = np.random.default_rng(1)
+    # within-stratum resampling with the small-sample variance correction (Davison and Hinkley, 1997, Sec. 3.7)
+    X = [x.mean() + (x - x.mean()) * np.sqrt(len(x) / (len(x) - 1)) for x in X]
+    idx = [r2.integers(0, len(x), (20000, len(x))) for x in X]
+    tot = sum(len(x) for x in X)
+    boots = sum(x[i].sum(1) for x, i in zip(X, idx)) / tot
+    # stratified signed-rank test: ranks of |d| within each stratum, Monte Carlo sign flips of every graph
+    X = X0
+    R = [rankdata(np.abs(x)) * (np.abs(x) > 1e-12) for x in X]
+    S = [np.sign(x) for x in X]
+    obs = sum((r * s).sum() for r, s in zip(R, S))
+    r3 = np.random.default_rng(2)
+    null = sum((r[None, :] * r3.choice([-1.0, 1.0], (NPERM, len(r)))).sum(1) for r in R)
+    p_strat = float((np.sum(np.abs(null) >= abs(obs) - 1e-9) + 1) / (NPERM + 1))
+    # level-aggregated sensitivity: one mean difference per stratum, exact sign-flip test over strata
+    lv = np.array([x.mean() for x in X]); k = len(lv)
+    p_lev = float(ttest_1samp(lv, 0.0).pvalue) if np.ptp(lv) > 0 else 1.0
+    nz = allx[np.abs(allx) > 1e-12]; rk = rankdata(np.abs(nz))
+    rbc = float((rk[nz > 0].sum() - rk[nz < 0].sum()) / rk.sum()) if len(nz) else 0.0
+    return dict(ci95_strat=[float(np.percentile(boots, 2.5)), float(np.percentile(boots, 97.5))], p_strat=p_strat,
+                levels=[float(v) for v in lv], lev_neg=int((lv < -0.005).sum()), lev_pos=int((lv > 0.005).sum()), p_lev=p_lev,
+                rbc=rbc, dz=float(allx.mean() / allx.std(ddof=1)) if allx.std(ddof=1) > 0 else 0.0,
+                ties=int(len(allx) - (allx > 0.005).sum() - (allx < -0.005).sum()))
+for ref in ["LeidenK", "RegSpectral", "KMeans-featM"]:
+    for name in ["sweep", "het"]:
+        rows = out[f"{ref}|{name}"]
+        for m in DEEP:
+            rows[m].update(strat_stats(m, ref, STRATA[name]))
+        for key in ["p_strat", "p_lev"]:
+            for m, a in zip(DEEP, holm(np.array([rows[m][key] for m in DEEP]))):
+                rows[m][key + "_holm"] = float(a)
 out["per_graph"] = {g: {m: ari(g, m) for m in LAB} for g in SW + HET}
 out["gstats"] = {g: dict(edges=gs[g]["edges"], K=gs[g]["K"], mix=gs[g]["realized_mixing"]) for g in SW + HET}
 # Table 14: the first three graphs per mu, on which both published configurations and our earlier re-implementation ran
@@ -74,3 +115,8 @@ for k in out["het_mix"]:
 print("all", " ".join(f"{out['het'][m]['all']:7.3f}" for m in show))
 for key in ["LeidenK|sweep", "LeidenK|het", "RegSpectral|sweep", "RegSpectral|het", "KMeans-featM|sweep", "KMeans-featM|het"]:
     print(key, {m: (round(r["mean"], 3), [round(c, 3) for c in r["ci95"]], round(r["p_holm"], 4), f"{r['wins']}/{r['losses']}") for m, r in out[key].items()})
+for key in ["LeidenK|sweep", "LeidenK|het", "KMeans-featM|sweep", "KMeans-featM|het"]:
+    print("ISSUE5", key)
+    for m, r in out[key].items():
+        print(f"  {m:10s} {r['mean']:+.3f} pooledCI[{r['ci95'][0]:+.3f},{r['ci95'][1]:+.3f}] stratCI[{r['ci95_strat'][0]:+.3f},{r['ci95_strat'][1]:+.3f}] "
+              f"W/L/T {r['wins']}/{r['losses']}/{r['ties']} pH {r['p_holm']:.1e} pStratH {r['p_strat_holm']:.1e} lev -{r['lev_neg']}/+{r['lev_pos']} pLevH {r['p_lev_holm']:.3f} rbc {r['rbc']:+.2f} dz {r['dz']:+.2f}")

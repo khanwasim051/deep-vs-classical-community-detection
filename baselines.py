@@ -192,6 +192,7 @@ def main():
     p.add_argument("--dataset", default="all")
     p.add_argument("--methods", default=",".join(DEFAULT))
     p.add_argument("--k_hat", default="", help="K-unknown setting: json file {dataset: K_hat}; method names get '@Khat'")
+    p.add_argument("--khat_label", default="Khat", help="suffix for method names in the K-unknown setting (e.g. KhatBH for a second estimator)")
     p.add_argument("--runs", type=int, default=5)
     p.add_argument("--root", default="data")
     p.add_argument("--out", default="results")
@@ -210,7 +211,7 @@ def main():
         new = not os.path.exists(path)
         K_true = len(np.unique(g["y"]))
         for mname in a.methods.split(","):
-            label = mname + ("@Khat" if a.k_hat else "")
+            label = mname + ("@" + a.khat_label if a.k_hat else "")
             res_all = []
             done = repair_and_done(path, label) if a.resume else set()
             new = not os.path.exists(path)

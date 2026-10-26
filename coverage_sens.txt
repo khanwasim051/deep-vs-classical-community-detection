@@ -1,0 +1,15 @@
+Runs saved per dataset (rows) and method (columns); '.' = complete, a number = runs saved so far
+
+method        CCASSG[PyAGC-Photo] DAEGC[PyAGC-Photo] DGI[PyAGC-Photo] DMoN[PyAGC-Photo] DinkNet[PyAGC-Photo] GAE[PyAGC-Photo] MS2CAG[PyAGC-Photo] NS4GC[PyAGC-Photo] SSGC[PyAGC-Photo]
+dataset                                                                                                                                                                               
+email-eu-core                   .                  .                .                 .                    .                0                   .                  .                 .
+football                        .                  .                .                 .                    .                .                   .                  .                 .
+kki                             .                  .                .                 .                    .                .                   .                  .                 .
+citeseer                        .                  .                .                 .                    .                .                   .                  .                 .
+cora                            .                  .                .                 .                    .                .                   .                  .                 .
+lfr1                            .                  .                .                 .                    .                .                   .                  .                 .
+lfr2                            .                  .                .                 .                    .                .                   .                  .                 .
+lfr6                            .                  .                .                 .                    .                .                   .                  .                 .
+
+1 of 72 combinations incomplete
+  email-eu-core      GAE[PyAGC-Photo]   0/5 runs

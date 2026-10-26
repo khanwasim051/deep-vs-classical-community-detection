@@ -1,0 +1,21 @@
+Runs saved per dataset (rows) and method (columns); '.' = complete, a number = runs saved so far
+
+method        CCASSG@Khat DAEGC@Khat DGI@Khat DMoN@Khat DinkNet@Khat GAE@Khat KMeans-feat@Khat MS2CAG@Khat MixFlow-CD_khat NS4GC@Khat RegSpectral@Khat SSGC@Khat SpecAttr@Khat
+dataset                                                                                                                                                                       
+email-eu-core           .          .        .         .            .        .                .           .               .          .                .         .             .
+football                .          .        .         .            .        .                .           .               .          .                .         .             .
+dolphins                .          .        .         .            .        .                .           .               .          .                .         .             .
+ukfaculty               .          .        .         .            .        .                .           .               .          .                .         .             .
+kki                     .          .        .         .            .        .                .           .               .          .                .         .             .
+amazon-photo            .          .        .         .            .        .                .           .               .          .                .         .             .
+citeseer                .          .        .         .            .        .                .           .               .          .                .         .             .
+cora                    .          .        .         .            .        .                .           .               .          .                .         .             .
+pubmed                  .          .        .         .            .        .                .           .               .          .                .         .             .
+lfr1                    .          .        .         .            .        .                .           .               .          .                .         .             .
+lfr2                    .          .        .         .            .        .                .           .               .          .                .         .             .
+lfr3                    .          .        .         .            .        .                .           .               .          .                .         .             .
+lfr4                    .          .        .         .            .        .                .           .               .          .                .         .             .
+lfr6                    .          .        .         .            .        .                .           .               .          .                .         .             .
+lfr7                    .          .        .         .            .        .                .           .               .          .                .         .             .
+
+0 of 195 combinations incomplete

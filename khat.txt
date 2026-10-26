@@ -1,0 +1,16 @@
+email-eu-core      K_true   42   K_hat    5
+football           K_true   12   K_hat   11
+dolphins           K_true    2   K_hat    2
+ukfaculty          K_true    3   K_hat    3
+kki                K_true   83   K_hat    2
+cora               K_true    7   K_hat    2
+citeseer           K_true    6   K_hat    2
+pubmed             K_true    3   K_hat    2
+amazon-photo       K_true    8   K_hat    5
+lfr1               K_true   23   K_hat   23
+lfr2               K_true  129   K_hat    2
+lfr3               K_true  129   K_hat  129
+lfr4               K_true   23   K_hat   23
+lfr6               K_true  129   K_hat    2
+lfr7               K_true  129   K_hat    3
+saved khat.json
