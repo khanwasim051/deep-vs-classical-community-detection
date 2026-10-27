@@ -12,7 +12,7 @@
 | `synthetic.py` | `syn.json` | Tables 13 and 15, Sections 6.1-6.2 stratified paired tests, Supplementary Tables S21-S23 |
 | `controls.py` | `controls.json` | Tables 11 and 12 (both estimators of K), unknown-K paired comparisons, Supplementary Tables S19-S20 |
 | `misc_tables.py` | `misc_tables.json` | Tables 4, 16, 17 and 19 |
-| `plot_cd.py`, `plot_pareto.py`, `plot_sweep.py` | `*.png` | Figs. 2, 3 and 4 |
+| `plot_overview.py`, `plot_cd.py`, `plot_pareto.py`, `plot_sweep.py` | `*.png`, `Fig1.tif`–`Fig4.tif` (600 dpi) | Figs. 1, 2, 3 and 4 |
 
 `common.py` holds the graph and method lists and the published accuracies used in Table 4.
 Bootstrap intervals use fixed random seeds and 20,000 resamples (seed 0 for unstratified, seed 1 for the stratified

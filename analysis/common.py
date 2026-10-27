@@ -53,3 +53,10 @@ def holm(ps):
     for k, i in enumerate(o):
         run = max(run, (m - k) * ps[i]); adj[i] = min(1, run)
     return adj
+
+
+def save_tif(fig, name, dpi=600):
+    """Save a print-resolution copy of a figure: RGB TIFF with LZW compression at 600 dpi (Elsevier artwork guidelines)."""
+    from PIL import Image
+    fig.savefig(name, dpi=dpi, bbox_inches="tight", facecolor="white", pil_kwargs={"compression": "tiff_lzw"})
+    Image.open(name).convert("RGB").save(name, compression="tiff_lzw", dpi=(dpi, dpi))
